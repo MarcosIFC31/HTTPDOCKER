@@ -6,3 +6,10 @@ services:
       context: ..
       dockerfile: http.Dockerfile
     container_name: http-dck-Buguisoft
+    volumes:
+      - ./etc/apache2/sites-enabled:/etc/apache2/sites-enabled:rw
+      - ./var/www/games:var/www/games:rw
+      - ./srv/www/games:/srv/www/games/imagenes:rw
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp

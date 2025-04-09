@@ -14,3 +14,8 @@ CMD ["named", "-g"]
 # Exposam els port utilizats
 EXPOSE ??/udp
 EXPOSE ??/tcp
+
+RUN cp www.buguisoft.com.conf /etc/apache2/sites-avaliable/www.buguisoft.com.conf
+RUN a2ensite www.buguisoft.com.conf && sudo systemctl reload apache2
+
+
