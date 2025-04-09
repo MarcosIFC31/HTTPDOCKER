@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  dns-hospitalbinissalem:
+  dns-buguisoft:
     build:
       context: ..
-      dockerfile: dhcp.Dockerfile
-    container_name: dhcp-dck-hospitalbinissalem
+      dockerfile: http.Dockerfile
+    container_name: http-dck-Buguisoft
