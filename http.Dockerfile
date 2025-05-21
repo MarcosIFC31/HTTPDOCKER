@@ -9,7 +9,7 @@ RUN apt-get update -y && \
 ## Ejecucio de les instruccions per arrancar el contenidor
 # Montam les carpetes persistents
 VOLUME /etc/apache2
-CMD ["named", "-g"]
+CMD ["apachectl", "-D", "FOREGROUND"]
 
 # Exposam els port utilizats
 EXPOSE 80:80/tcp
