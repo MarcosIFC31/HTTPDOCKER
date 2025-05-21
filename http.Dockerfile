@@ -17,6 +17,6 @@ EXPOSE 443:443/tcp
 
 #RUN cp www.buguisoft.com.conf /etc/apache2/sites-avaliable/www.buguisoft.com.conf
 #RUN a2ensite www.buguisoft.com.conf && 
-RUN sudo systemctl reload apache2
+#RUN sudo systemctl reload apache2
 
 
